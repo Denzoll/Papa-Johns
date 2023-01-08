@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 const PizzaBlock = (props) => {
-  // const [count, SetCount] = useState(0);
-  // onClick={() => SetCount(count + 1)}
+  // const [count, setCount] = useState(0);
+  // onClick={() => setCount(count + 1)} сделал счетчик для пиццы
   const typeNames = ["тонкое", "традиционное"];
   const [activeType, setActiveType] = useState(0);
   const activeTypeClick = (index) => {
@@ -21,7 +21,7 @@ const PizzaBlock = (props) => {
         <ul>
           {props.types.map((type, i) => {
             return (
-              <li
+              <li key={i}
                 onClick={() => activeTypeClick(i)}
                 className={activeType === i ? "active" : ""}
               >
@@ -33,7 +33,7 @@ const PizzaBlock = (props) => {
         <ul>
           {props.sizes.map((item, i) => {
             return (
-              <li
+              <li key={i}
                 onClick={() => activeSizeClick(i)}
                 className={activeSize === i ? "active" : ""}
               >
