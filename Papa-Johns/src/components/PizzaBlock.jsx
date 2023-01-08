@@ -21,7 +21,7 @@ const PizzaBlock = (props) => {
         <ul>
           {props.types.map((type, i) => {
             return (
-              <li key={i}
+              <li key={type}
                 onClick={() => activeTypeClick(i)}
                 className={activeType === i ? "active" : ""}
               >
@@ -33,7 +33,7 @@ const PizzaBlock = (props) => {
         <ul>
           {props.sizes.map((item, i) => {
             return (
-              <li key={i}
+              <li key={item}
                 onClick={() => activeSizeClick(i)}
                 className={activeSize === i ? "active" : ""}
               >
