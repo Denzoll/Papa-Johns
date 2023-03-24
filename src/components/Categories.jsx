@@ -64,6 +64,7 @@ const Categories = () => {
           className={activeIndex === 5 ? "active" : ""}
         >
           Закрытые
+          старый способ
         </li> */}
       </ul>
     </div>
