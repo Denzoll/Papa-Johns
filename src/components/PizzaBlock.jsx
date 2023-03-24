@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const PizzaBlock = (props) => {
   // const [count, setCount] = useState(0);
-  // onClick={() => setCount(count + 1)} сделал  тестовый счетчик для пиццыпше
+  // onClick={() => setCount(count + 1)} сделал  тестовый счетчик для пиццы
   const typeNames = ["тонкое", "традиционное"];
   const [activeType, setActiveType] = useState(0);
   const activeTypeClick = (index) => {
