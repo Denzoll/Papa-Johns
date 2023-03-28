@@ -21,6 +21,7 @@ function App() {
       return res.json();
     }).then((arr) => {
       setItems(arr)
+      setIsLoading(false)
     })
   }, [])
   return (
@@ -37,7 +38,7 @@ function App() {
           <div className="content__items">
           {
             isLoading 
-            ? [...new Array (6)].map((_, index) => <Skeleton  key={index} />) :
+            ? [...new Array (8)].map((_, index) => <Skeleton  key={index} />) :
             items.map((obj) => (
               <PizzaBlock {...obj} key={obj.id}
                 // title={obj.title}
