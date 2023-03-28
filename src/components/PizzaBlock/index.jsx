@@ -58,7 +58,7 @@ const PizzaBlock = (props) => {
               fill="white"
             />
           </svg>
-          <span>Проверка связи</span>
+          <span>Добавить</span>
           <i>0</i>
         </div>
       </div>
